@@ -4,7 +4,7 @@ This repo contains Python 3.6 solutions to some of the Daily Coding Problem when
 
 ## List of Problems Solved
 
-__1. Problem #27: Well-Formed Brackets__
+### 1. Problem #27: Well-Formed Brackets
 
 This problem was asked by Facebook.
 
