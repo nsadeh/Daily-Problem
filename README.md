@@ -28,8 +28,10 @@ If you can only fit one word on a line, then you should pad the right-hand side 
 
 Each word is guaranteed not to be longer than k.
 
-For example, given the list of words ["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"] and k = 16, you should return the following:
+For example, given the list of words `["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"]` and `k = `16, you should return the following:
 
+```
 ["the  quick brown", # 1 extra space on the left
 "fox  jumps  over", # 2 extra spaces distributed evenly
 "the   lazy   dog"] # 4 extra spaces distributed evenly
+```
