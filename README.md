@@ -35,3 +35,7 @@ For example, given the list of words `["the", "quick", "brown", "fox", "jumps", 
 "fox  jumps  over", # 2 extra spaces distributed evenly
 "the   lazy   dog"] # 4 extra spaces distributed evenly
 ```
+
+The solution to this problem is available [here](https://github.com/nsadeh/Daily-Problem/blob/master/problem_28.py). That is my 15-minute solution, I plan to optimize and clean the approach.
+
+The algorithm iterates through each word and appends it to a running `current_word` if the total length is acceptable. If not, it appends the `current_word` to the list to be returned after running `interspace` on it, which disperses spaces according to the instruction inside the phrase.
