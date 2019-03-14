@@ -39,3 +39,11 @@ For example, given the list of words `["the", "quick", "brown", "fox", "jumps", 
 The solution to this problem is available [here](https://github.com/nsadeh/Daily-Problem/blob/master/problem_28.py). That is my 15-minute solution, I plan to optimize and clean the approach.
 
 The algorithm iterates through each word and appends it to a running `current_word` if the total length is acceptable. If not, it appends the `current_word` to the list to be returned after running `interspace` on it, which disperses spaces according to the instruction inside the phrase.
+
+## 3. Problem #33: Unbiased Coin Toss
+
+This problem was asked by Square.
+
+Assume you have access to a function toss_biased() which returns 0 or 1 with a probability that's not 50-50 (but also not 0-100 or 100-0). You do not know the bias of the coin.
+
+Write a function to simulate an unbiased coin toss.
