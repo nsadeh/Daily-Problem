@@ -1,7 +1,7 @@
 """Daily Coding Problem #85"""
 
 
-def math_filer(x, y, b):
+def math_filter(x, y, b):
     """
     Mathematical equivalent of x if b == 1 else y.
 
@@ -18,8 +18,8 @@ def math_filer(x, y, b):
 
 def test_math_filter():
     """Present two test cases for math_filter."""
-    case_1 = math_filer(87, 21, 1)
-    case_2 = math_filer(37,1, 0)
+    case_1 = math_filter(87, 21, 1)
+    case_2 = math_filter(37,1, 0)
     assert case_1 == 87, "Failed x test case: returned %f expected 87" % case_1
     assert case_2 == 1, "Failed x test case: returned %f expected 1" % case_2
 
