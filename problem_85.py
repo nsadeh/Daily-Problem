@@ -1,7 +1,10 @@
 """Daily Coding Problem #85"""
 
+from hypothesis import given
+from hypothesis.strategies import integers, booleans
 
-def math_filer(x, y, b):
+
+def math_filter(x, y, b):
     """
     Mathematical equivalent of x if b == 1 else y.
 
@@ -16,12 +19,11 @@ def math_filer(x, y, b):
     return x*b + y*(1 - b)
 
 
-def test_math_filter():
+@given(x=integers(), y=integers(), b=booleans())
+def test_math_filter(x, y, b):
     """Present two test cases for math_filter."""
-    case_1 = math_filer(87, 21, 1)
-    case_2 = math_filer(37,1, 0)
-    assert case_1 == 87, "Failed x test case: returned %f expected 87" % case_1
-    assert case_2 == 1, "Failed x test case: returned %f expected 1" % case_2
+    assert math_filter(x, y, int(b)) == (x if b else y), \
+        "Failed test case: \n x: %f \n y: %f \n b: %f" % (x, y, int(b))
 
 
 if __name__ == '__main__':
